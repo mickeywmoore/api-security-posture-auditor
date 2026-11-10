@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "secpulse"
+version = "1.0.0"
+description = "Zero-dependency Python CLI for HTTP/API security header posture auditing and SARIF v2.1.0 CI/CD compliance gating."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "Mickey Moore" }]
+dependencies = []
+
+[project.scripts]
+secpulse = "secpulse.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
